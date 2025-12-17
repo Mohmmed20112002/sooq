@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pay.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="image/login_image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sooq Code</title>
+</head>
+<body>
+    <header class="header">
+       <nav class="nav">
+    <h1 class="logo"><a href="#">Sooq Code</a></h1>
+
+    <ul id="navList">
+        <li id="li_1">الرئيسيه</li>
+        <li id="li_2">
+            <select id="app">
+                <option value="">تطبيقات</option>
+                <option value="appliction">تطبيقات فعليه</option>
+                <option value="code_app">اكواد تطبيقات</option>
+            </select>
+        </li>
+        <li id="li_3">
+            <select id="web">
+                <option value="">مواقع</option>
+                <option value="web_them">قوالب مواقع</option>
+                <option value="web_side">مواقع فعليه</option>
+            </select>
+        </li>
+        <li id="li_4"><a href="#request_info">اطلب خدمه</a></li>
+        <li id="li_5"><a href="#services">خدماتنا</a></li>
+        <li id="li_6"><a href="#contact">تواصل معنا</a></li>
+        <li><a href="blog.html">المدونه</a></li>
+        <li class="sin"><button class="login">تسجيل الدخول</button></li>
+    </ul>
+
+    <div class="burger">
+        <i class="fa-solid fa-list"></i>
+    </div>
+</nav>
+    </header>
+    <section class="page">
+    <section class="section_proderct">
+        <div class="order">
+            <i class="fa-solid fa-box"></i>
+            <p>ملخص الطلب</p>
+        </div>
+        <div class="prodect">
+            <div class="prodect_img">
+                <img src="" alt="" id = "image">
+            </div>
+            <div class="prodect_text">
+                <div class="name">
+                <p id="name"></p>   
+                </div>
+                <div class="type">
+                <p id="type"></p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="price">
+            <p>السعر</p>
+            <span>
+                <p id="price"></p>
+                <p>$</p>
+            </span>
+        </div>
+        <div class="comm">
+            <p>عموله</p>
+            <p>10%</p>
+        </div>
+        <div class="Final">
+            <p>الاجمالي</p>
+            <p id="total"></p>
+        </div>
+
+        <div class="note">
+            <p> 
+                <a href="#" style="color: black; text-decoration: none;" id="link">ستحصل علي رابط التحميل فورا عند اتمام عملية الدفع</a>
+            </p>
+        </div>
+    </section>
+    <!--section card-->
+    <section class="section_pay">
+        <form action="php/pay.php" class="pay" method="post">
+            <div class="clint_data">
+                <div class="Invoice">
+                    <i class="fa-regular fa-user"></i>
+                    <p>معلومات الفاتوره</p>
+                </div>
+                <div class="name">
+                    <div>
+                        <p> * الاسم الاول</p>
+                        <input type="text" placeholder="الاسم الاول" name="name_1" id="name_1">
+                    </div>
+                    <div>
+                        <p> * اسم العائله</p>
+                        <input type="text" placeholder="الاسم الثاني " name="name_2" id="name_2">
+                    </div>
+                </div>
+                <div class="email">
+                    <p> * البريد الالكتروني </p>
+                    <input type="email" placeholder="example@email.com" name="email" id="mail">
+                    <p>سنرسل لك تفاصيل الطلب علي هذا الايميل</p>
+                </div>
+                <div class="tel">
+                    <p> * رقم الهاتف </p>
+                    <input type="tel" placeholder="+20 5XXXXX XXXX" name="phone" id="phone">
+                </div>
+                <div class="Country">
+                    <div>
+                        <p> *  الدوله</p>
+                        <input type="text" placeholder=" مصر" name="country" id="country">
+                    </div>
+                    <div>
+                        <p> *  المدينه</p>
+                        <input type="text" placeholder=" القاهره " name="city" id="city">
+                    </div>
+                </div>
+                <div class="title">
+                    <p>(اختياري) * العنوان</p>
+                    <input type="text" placeholder="شارع الملك فهد" name="address" id="address">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_icon">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <p>طريقة الدفع</p>
+                </div>
+                <div class="icon">
+                    <div> 
+                    <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <span>
+                        <p> Pay Pal / حساب</p>
+                        <p>ادفع بامان باستخدام حسابك او بطاقتك البنكيه</p>
+                    </span>
+                </div>
+                <div class="card_number" style="display: none;">
+                    <p> *  كود المنتج</p>
+                    <input type="number" readonly id="prodect" name="prodect">
+                </div>
+                <div class="crad_data" style="display: none;">
+                    <div class="data">
+                        <p> * البائع </p>
+                        <input type="text" readonly id="seller" name="seller">
+                    </div>
+                </div>
+                <div class="card_image">
+                    <div>
+                        <img src="image/paypal.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="submit" id="pay_btn">
+                    <p>اتمام الدفع الان</p>
+                    <i class="fa-solid fa-lock"></i>
+                </button>
+                <button>
+                    <p>العوده للمتجر</p>
+                    <i class="fa-solid fa-share"></i>
+                </button>
+            </div>
+        </form>
+    </section>
+    </section>
+    <section class="content">
+        <div class="content_container">
+        <div class="text">
+            <p>هل تحتاج الي مساعده؟</p>
+            <p>فريق الدعم متواجد علي مدار الساعه لمساعدتك</p>
+        </div>
+        <div class="content_btn">
+            <button id="whatsapp">تواصل عبر الواتساب </button>
+            <button><a href="#" style="text-decoration: none; color: black;" id="email">البريد الالكتروني</a></button>
+            <button id="facebook">تواصل عبر فيسبوك</button>
+        </div>
+        </div>
+    </section>
+
+    
+    <!--footer-->
+
+<footer class="footer">
+  <div class="footer_container">
+    <div class="footer_col logo_col">
+      <h3 class="footer_logo"><i class="fa-solid fa-code"></i>Sooq Code</h3>
+      <p>منصة تجمع المبرمجين وأصحاب المشاريع لتبادل الأكواد والخدمات التقنية بسهولة وأمان.</p>
+      <div class="social_icons">
+        <a href="#" class ="face_footer"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="insta_footet"><i class="fa-brands fa-instagram"></i></i></a>
+        <a href="#" class="linkedin_footer"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="whats_footer"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer_col">
+      <h4>روابط سريعة</h4>
+         <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="index.html#services">خدماتنا</a></li>
+        <li><a href="index.html#request_info">اطلب خدمة</a></li>
+        <li><a href="index.html#contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_col">
+      <h4>خدماتنا</h4>
+      <ul>
+        <li><a href="speed/">تحليل سرعة الموقع</a></li>
+        <li><a href="security/">اختبار أمان الموقع</a></li>
+        <li><a href="Hosted/">بيانات استضافة المواقع</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_col">
+      <h4>تواصل معنا</h4>
+      <ul>
+        <li><i class="fa-solid fa-envelope"></i> <a href="" class="mal_fo" style="text-decoration: none; color: white;"></a></li>
+        <li><i class="fa-solid fa-phone"></i> <a href="" class="phon_fo" style="text-decoration: none; color: white;"></a></li>
+        <li><i class="fa-solid fa-location-dot"></i> الكويت - العاصمة</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <p>© 2025 <span>Sooq Code</span> جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+<script src="js/pay.js"></script>
+</body>
+</html>

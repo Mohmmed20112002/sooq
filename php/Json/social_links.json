@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "platform": "facebook",
+        "link": "https:\/\/www.facebook.com\/aadmtwers\/?viewas=100000686899395&locale=ar_AR"
+    },
+    {
+        "id": "2",
+        "platform": "instagram",
+        "link": "https:\/\/www.instagram.com\/?hl=ar"
+    },
+    {
+        "id": "3",
+        "platform": "linkedin",
+        "link": "https:\/\/www.linkedin.com\/login\/ar"
+    },
+    {
+        "id": "4",
+        "platform": "email",
+        "link": "aadmtwers7@gmail.com"
+    },
+    {
+        "id": "5",
+        "platform": "whatsapp",
+        "link": "201090082145"
+    }
+]

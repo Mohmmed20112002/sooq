@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/add_prodect.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="image/login_image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sooq Code</title>
+</head>
+<body>
+
+    <form action="php/add_prodect.php" method="POST" enctype="multipart/form-data" id="form">
+        <section class="title">
+        <span style="display: flex; flex-direction: row;">
+            <p class="edit_title ">اضافة منتج جديد</p>
+            <i class="fa-solid fa-box"></i>
+        </span>
+        <span>
+            <p class="edit_suptitle">قم بملء المنوذج ادناه لاضافة منتج جديد الي المتجر </p>
+        </span>
+        </section>
+        <section class="prodect_data">
+            <h4>المعلومات الاساسيه</h4>
+            <div class="prodect_name" style="display: flex; gap: 30px;">
+                <span style="width: 50%;">
+                    <p> * اسم المنتج</p>
+                    <input type="text" name="prodect_name" placeholder="ادخل اسم المنتج">
+                </span>
+                <span style="width: 50%;">
+                    <p> * كود المنتج</p>
+                    <input type="text" name= "prodect_code"placeholder="يتم كتابته بشكل تلقائي" readonly>
+                </span>
+            </div>
+            <div class="prodect_description">
+                <span> 
+                <p> * الوصف</p>
+                <textarea name="description" placeholder="ادخل وصف المنتج" style="height: 80px;"></textarea>
+                </span>
+            </div>
+            <div class="prodect_type" style="display: flex; gap: 30px; flex-direction: row-reverse;">
+                <span style="width: 50%;">
+                    <p> * السعر </p>
+                    <input type="number" name="prodect_price">
+                </span>
+                <span style="width: 50%;">
+                    <p> * الفئه</p>
+                    <select name="type" id="type" class="type">
+                        <option value="none">اختر الفئه</option>
+                        <option value="web_them">كود موقع الكتروني</option>
+                        <option value="web_side">موقع الكتروني </option>
+                        <option value="app_code">كود تطبيق </option>
+                        <option value="appliction">ملكية تطبيق</option>
+                    </select>
+                </span>
+            </div>
+            <div class="saller" style="gap: 30px; display: flex; flex-direction: row-reverse;">
+                <span style="width: 50%;">
+                    <p> * كود البائع </p>
+                    <input type="text" name="seller" class="seller">
+                </span>
+                <span style="width: 50%;">
+                    <p> * الادوات المستخدمه </p>
+                    <input type="text" name="tole" id="tool" placeholder="افصل بين كل اداه و اخري بمسافه">
+                </span>
+            </div>
+        </section>
+        <section class="view" >
+            <h4 style="font-size: 17px;">اعدادات العرض المباشر</h4>
+            <div style="display: flex; gap: 30px;">
+                <span style="width: 50%;">
+                    <p> * صفحة الظهور</p>
+                    <select name="view_page" id="">
+                        <option value="home_page" class="home_page">الصفحه الرئيسيه</option>
+                        <option value="App_page">صفحة التطبيقات</option>
+                    </select>
+                </span>
+                <span style="width: 50%;">
+                    <p> * حالة المنتج </p>
+                    <select name="prodect_type">
+                        <option value="active" class="active">نشط</option>
+                        <option value="not_active">غير نشط</option>
+                    </select>
+                </span>
+            </div>
+        </section>
+        <section class="side" >
+            <h4 style="font-size: 17px;">المواقع الفعليه</h4>
+            <div style="display: flex; gap: 30px;">
+                <span style="width: 50%;">
+                    <p> *  الزيارات الشهريه</p>
+                    <input type="number" name="visity">
+                </span>
+                <span style="width: 50%;">
+                    <p> * الارباح الشهريه</p>
+                    <input type="number" name="monthly">
+                </span>
+            </div>
+        </section>
+         <section class="appliction" >
+            <h4 style="font-size: 17px;">تفاصيل التطبيق</h4>
+            <div style="display: flex; gap: 30px;">
+                <span style="width: 50%;">
+                    <p> * عدد المستخدمين</p>
+                    <input type="number" name="downloads">
+                </span>
+                <span style="width: 50%;">
+                    <p> * الارباح الشهريه</p>
+                    <input type="number" name="monthly_earnings">
+                </span>
+            </div>
+        </section>
+        <section class="downlod_prodect">
+            <h4>الملفات و الروابط</h4>
+            <span id="downlode">
+                <p> * ملف التحميل</p>
+                <input type="file" name="downlode" >
+            </span>
+            <span>
+                <p> * رابط المشاهده </p>
+                <input type="text" name="view_link" id="view_link" placeholder="في حالة المواقع اضف رابط الموقع و في حالة التطبيقات اضاف رابط التطبيق من Googel Play">
+            </span>
+            <span>
+                <p>* التصنيف</p>
+                <select name="ification">
+                    <option value="الكل">الكل</option>
+                    <option value="تعليمي">تعليمي</option>
+                    <option value="افلام">افلام</option>
+                    <option value="تعريفي">تعريفي</option>
+                    <option value="اخباري">اخباري</option>
+                    <option value="خدمي">خدمي</option>
+                    <option value="شخصي">شخصي</option>
+                </select>
+            </span>
+            <span class="operating_system">
+                <p>* نظام التشغيل</p>
+                <select name="operating_system">
+                    <option value="ALL">الكل</option>
+                    <option value="Android">Android</option>
+                    <option value="Ios">IOS</option>
+                </select>
+            </span>
+        </section>
+        <section class="prodet_img">
+            <h4>صور المنتج</h4>
+            <span class="img" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: center; margin-top: 30px; margin-bottom: 30px;">
+                <span style="width: 22%; height: 200px; background-color: #f0f0f0;">
+                    <img src="" alt="">
+                </span>
+                <span style="width: 22%; height: 200px; background-color: #f0f0f0;">
+                    <img src="" alt="">
+                </span>
+                <span style="width: 22%; height: 200px; background-color: #f0f0f0;">
+                    <img src="" alt="">
+                </span>
+                <span style="width: 22%; height: 200px; background-color: #f0f0f0;">
+                    <img src="" alt="">
+                </span>
+                <span style="width: 22%; height: 200px; background-color: #f0f0f0;">
+                    <img src="" alt="">
+                </span>
+                <span style="width: 22%; height: 200px; background-color: #f0f0f0;">
+                    <img src="" alt="">
+                </span>
+                <span style="width: 22%; height: 200px; background-color: #f0f0f0;">
+                    <img src="" alt="">
+                </span>
+                <span style="width: 22%; height: 200px; background-color: #f0f0f0;">
+                    <img src="" alt="">
+                </span>
+            </span>
+            <input type="file" name="images[]" multiple id="imageInput">
+            <p style="margin-top:2px; font-size: 12px; color: hsl(244, 100%, 53%);">اضف 8 صور بدون زياده او نقصان </p>
+        </section>
+        <section id="seller" class="seller_data">
+            <div>
+                <span>
+                    <p> * نوع التعديل </p>
+                    <select name="edit_type" id="">
+                        <option value="edit">تحديث بيانات</option>
+                        <option value="delet">حذف نهائي</option>
+                    </select>
+                </span>
+            </div>
+        </section>
+
+        <section class="btn">
+            <button type="submit" id="btn_submit">اضافة منتج</button>
+        </section>
+        
+
+    </form>
+    <script src="js/add_prodect.js"></script>
+</body>
+</html>

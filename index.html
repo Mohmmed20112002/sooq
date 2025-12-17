@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sooq code</title>
+    <link rel="icon" href="img/icon.png">
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+         <!-- File CSS -->
+         <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/201234567890" target="_blank" class="whatsapp-float">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<body>
+        <div class="items_in_cart" id="cart_items">
+        </div>
+
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"> <img src="img/logo.png" alt=""></a>
+
+                <div id="search_box">
+
+                    <div class="select_box">
+                        <select id="category" name="category" class="select_serch">
+                          <option value="web_them.json">قوالب مواقع</option>
+                          <option value="web_side.json">مواقع فعليه</option>
+                          <option value="appliction.json">تطبيقات فعليه</option>
+                          <option value="app_code.json">اكواد تطبيقات</option>
+                        </select>
+                    </div>
+
+                    <input type="text" name="search" class="serch" id="search" placeholder="ابحث عن منتج" required>
+
+                    <button type="submit" class="serch_btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    
+
+                </div>
+
+                <div class="header_icons">
+                    
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-solid fa-moon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+                    <div class="category_nav">
+
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>الاقسام</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+
+
+                        <div class="category_nav_list">
+                            <a href="#">قوالب مواقع</a>
+                            <a href="#"> مواقع فعليه</a>
+                            <a href="#">قوالب تطبيقات</a>
+                            <a href="#">تطبيقات فعليه</a>
+                        </div>
+
+                    </div>
+
+                    <ul class="nav_links">
+
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="home active"><a href="#">الرئيسيه</a></li>
+                        <li><a href="#">قوالب مواقع</a></li>
+                        <li><a href="#">مواقع فعليه</a></li>
+                        <li class="blog"><a href="#">المدونه</a></li>
+                        <li><a href="#">قوالب تطبيقات</a></li>
+                        <li><a href="#">تطبيقات فعليه </a></li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="login_signup btns">
+                    <a href="login.html" class="btn">تسجيل الدخول  <i class="fa-solid fa-right-to-bracket"></i></a>
+
+                    <a href="singin.html" class="btn">تسجيل حساب<i class="fa-solid fa-user-plus"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </header>
+
+
+    <div class="slider">
+        <div class="container">
+
+
+            <!-- Swiper -->
+            <div class="slide-swp mySwiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/banner_home1.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/banner_home2.png" alt=""></a>
+                    </div>
+
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+
+            <div class="banner_2">
+                <a href="#"><img src="img/banner_home3.png" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="banners_4">
+        <div class="container">
+
+
+            <div class="box web_them" id="web_them">
+                <a href="#" class="link_btn web_them"></a>
+
+                <img src="img/web_stide.png" alt="">
+                <div class="text">
+                    <h5>قوالب مواقع</h5>
+                    <p class="p_pox">نوفر لك العديد من قوالب المواقع الجاهزه و المناسبه لفكرتك </p>
+                    <h6 style="color: orange;">ابدء البحث  >></h6>
+                </div>
+            </div>
+
+
+            
+            <div class="box web_stide" id="web_side">
+                <a href="#" class="link_btn web_side"></a>
+
+                <img src="img/web_them.png" alt="">
+                <div class="text">
+                    <h5>مواقع فعليه</h5>
+                    <p class="p_pox">نوفر لك تجربة شراء مواقع الكترونيه موجوده بالفعل و تحقق الارباح</p>
+                    <h6 style="color: orange;"> ابدء البحث >></h6>
+
+                </div>
+            </div>
+
+
+            
+            <div class="box app_code" id="app_code">
+                <a href="#" class="link_btn app_code"></a>
+
+                <img src="img/app_them.png" alt="">
+                <div class="text">
+                    <h5>قوالب تطبيقات</h5>
+                    <p class="p_pox">نوفر لك العديد من قوالب تطبيقات الموبايل تدعم جميع انظمة التشغيل </p>
+                    <h6 style="color: orange;"> ابدء البحث >></h6>
+                </div>
+            </div>
+
+
+            
+            <div class="box appliction" id="appliction">
+                <a href="#" class="link_btn appliction"></a>
+
+                <img src="img/appliction.png" alt="">
+                <div class="text">
+                    <h5>تطبيقات فعليه </h5>
+                    <p class="p_pox">نوفر لك تجربة شراء ملكة تطبيقات الموبايل الموجوده بالفعلي علي المتجر</p>
+                    <h6 style="color: orange;">ابدء البحث   >></h6>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>قوالب مواقع</h2>
+                </div>
+                
+                <div class="products swiper-wrapper" id="WebThem">
+                </div>
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="banners">
+        <div class="container">
+            <div class="banners_boxs banner_2_img">
+                <a href="#" class="box Ai_serves"><img src="img/banner_box4.png" alt=""></a>
+                <a href="#" class="box sooqcode_team"><img src="img/banner_box5.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>مواقع</h2>
+                </div>
+                
+                <div class="products swiper-wrapper" id="WebSide">
+                </div>
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>قوالب تطبيقات</h2>
+                </div>
+                
+                <div class="products swiper-wrapper" id="AppCode">
+
+                </div>
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="banners">
+        <div class="container">
+            <div class="banners_boxs banner_3_img">
+                <a href="speed/" class="box"><img src="img/banner_box1.png" alt=""></a>
+                <a href="Hosted/" class="box"><img src="img/banner_box2.png" alt=""></a>
+                <a href="security/" class="box"><img src="img/banner_box3.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>تطبيقات</h2>
+                </div>
+                
+                <div class="products swiper-wrapper" id="Appliction"></div>
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <footer>
+       
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy;<span>Sooq Code.</span>  جميع الحقوق محفوظه لصالح موقع  </p>
+                 <div class="social_icon">
+                   <i class="fa-brands fa-facebook"></i> 
+
+                 </div>
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+       <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- File JS -->
+     
+      <script src="JS/swiper.js"></script>
+      <script src="js/main.js"></script>
+      <script src="JS/items_home.js"></script>
+</body>
+</html>

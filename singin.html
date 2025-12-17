@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/singin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="image/login_image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Sooq Code</title>
+</head>
+<body>
+    <form action="php/Mail.php" method="post">
+        <div class="title">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h4>انشاء حساب جديد</h4>
+            <p>انضم الينا و ابدء رحلتك معنا </p>
+        </div>
+        <div class="continer">
+            <span class="continer_title">
+            <h4>التسجيل</h4>
+            <p>قم بملء البيانات التاليه لانشاء حسابك</p>
+           </span>
+           <div class="name">
+            <span>
+                <p>* الاسم الكامل</p>
+                <input type="text" name="user_name" placeholder="ادخل اسمك الكامل" id="name">
+            </span>
+            <span>
+                <p> * البريد الالكتروني</p>
+                <input type="email" name="user_email" placeholder="youremail@email.com" id="email">
+            </span>
+           </div>
+           <div class="password">
+            <span>
+                <p> * كلمة المرور</p>
+             <input type="password" name="password" placeholder="************" id="password">
+            </span>
+            <span>
+                <p> * تاكيد كلمة المرور </p>
+                <input type="password" name="pass" placeholder="************" id="pass">
+            </span>
+           </div>
+           <div class="account_num">
+            <span>
+            <p> * نوع الحساب </p>
+            <select name="account_type" id="acount">
+                <option value="acount">اختر نوع الحساب</option>
+                <option value="seller">بائع</option>
+                <option value="freelanser">مستقل</option>
+            </select>
+            </span>
+            <span>
+                <p> * رقم الهاتف</p>
+                <input type="tel" name="phone" placeholder="ادخل رقم الهاتف" id="phone">
+            </span>
+           </div>
+           <div class="id_seller">
+            <span>
+                <p>ارفع بطاقة الهويه الشخصيه لتسجيل حساب بائع*</p>
+                <input type="file" name="id_seller" id="seller_file">
+            </span>
+           </div>
+
+            <span class="button">
+            <button class="btn" type="submit">
+                <p>تسجيل الدخول</p>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </button>
+           </span>
+           <span class="view_pass">
+                <p> * اظهار كلمة المرور</p>
+                <input type="checkbox" class="view">
+            </span>
+            <div class="creat_acount">
+            <p> لديك حساب بالفعل؟</p>
+            <a href="login.html">قم بتسجيل الدخول</a>
+           </div>
+        </div>
+        </div>
+    </form>
+    <script src="js/singin.js"></script>
+</body>
+</html>

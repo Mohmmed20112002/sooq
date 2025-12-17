@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="image/login_image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sooq Code</title>
+</head>
+<body>
+<header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"> <img src="img/logo.png" alt=""></a>
+
+                <div id="search_box">
+
+                    <div class="select_box">
+                        <select id="category" name="category" class="select_serch">
+                          <option value="web_them.json">قوالب مواقع</option>
+                          <option value="web_side.json">مواقع فعليه</option>
+                          <option value="appliction.json">تطبيقات فعليه</option>
+                          <option value="app_code.json">اكواد تطبيقات</option>
+                        </select>
+                    </div>
+
+                    <input type="text" name="search" class="serch" id="search" placeholder="ابحث عن منتج" required>
+
+                    <button type="submit" class="serch_btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    
+
+                </div>
+
+                <div class="header_icons">
+                    
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-solid fa-moon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+                    <div class="category_nav">
+
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>الاقسام</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+
+
+                        <div class="category_nav_list">
+                            <a href="#">قوالب مواقع</a>
+                            <a href="#"> مواقع فعليه</a>
+                            <a href="#">قوالب تطبيقات</a>
+                            <a href="#">تطبيقات فعليه</a>
+                        </div>
+
+                    </div>
+
+                    <ul class="nav_links">
+
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="home active"><a href="#">الرئيسيه</a></li>
+                        <li><a href="#">قوالب مواقع</a></li>
+                        <li><a href="#">مواقع فعليه</a></li>
+                        <li class="blog"><a href="#">المدونه</a></li>
+                        <li><a href="#">قوالب تطبيقات</a></li>
+                        <li><a href="#">تطبيقات فعليه </a></li>
+
+                    </ul>
+
+                </nav>
+</header>
+
+<section class="Prodect_section">
+    <div class="prodect_img">
+        <div class="image">
+            <img src="" alt="" id="image_1" class="img">
+        </div>
+        <div class="images">
+            <div>
+                <img src="" alt="" id="image_2" class="img">
+            </div>
+            <div>
+                <img src="" alt=""id="image_3" class="img">
+            </div>
+            <div>
+                <img src="" alt=""id="image_4"class="img">
+            </div>
+            <div>
+                <img src="" alt=""id="image_5"class="img">
+            </div>
+            <div>
+                <img src="" alt=""id="image_6"class="img">
+            </div>
+            <div>
+                <img src="" alt=""id="image_7"class="img">
+            </div>
+            <div>
+                <img src="" alt=""id="image_8"class="img">
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        <div class="prodect_text">
+            <h4 id="title"></h4>
+            <p id="sub_title"></p>
+        </div>
+        <div class="stars">
+            <div id="stars">
+                
+            </div>
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span style="display: flex; gap: 5px;">
+                <p class="view"></p>
+                <p>من</p>
+                <p>5</p>
+            </span>
+            <p class="preview"></p>
+        </div>
+        <div class="price">
+            <h3 id="price"></h3>
+            <p>$</p>
+        </div>
+           <div class="views">
+            <span id="views">
+              <p class="views_text">عدد المشاهدات</p>
+              <p class="views_num">1500</p>  
+            </span>
+            <span id="Profits">
+                <p class="profit_text">الارباح الشهريه</p>
+                <p class="profit_num">500$</p>
+            </span>
+            <span id="operating_system">
+                <p class="system_text">نظام التشغيل</p>
+                <p class="system_type"></p>
+            </span>
+        </div>
+        <div class="pay">
+            <button class="payment">اشتري الان <i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="view_web">معاينه مجانا <i class="fa-solid fa-eye"></i></button>
+        </div>
+     
+        <div class="conect_us">
+            <div class="Check_mark">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="conect">
+                <h4>تواصل معنا للمزيد من المعلومات</h4>
+                <div class="content_icons">
+                    <i class="fa-brands fa-facebook-f" id="facebook" ></i>
+                    <i class="fa-brands fa-whatsapp" id="whatsapp"></i> 
+                    <i class="fa-brands fa-instagram" id="instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--section lang-->
+<section class="tec_section">
+    <div class="text_tec">
+        <h4>التقنيات المستخدمه </h4>
+        <p>بني باستخدام احدث و اقوي التقنيات في عاليم البرمجه </p>
+    </div>
+    <div class="tec">
+       
+    </div>
+    <div class="evaluation">
+        <div>
+           <h4> : قيم المنتج </h4>
+           <i class="fa-regular fa-star" id="one"></i>
+           <i class="fa-regular fa-star" id="two"></i>
+           <i class="fa-regular fa-star" id="three"></i>
+           <i class="fa-regular fa-star" id="four"></i>
+           <i class="fa-regular fa-star" id="five"></i> 
+        </div>
+        <div class="evaluation_btn">
+            <button class ="evaluation_buton">قيم الان</button>
+        </div>
+    </div>
+</section>
+
+    <footer>       
+        </div>
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy;<span>Sooq Code.</span>  جميع الحقوق محفوظه لصالح موقع  </p>
+                 <div class="social_icon">
+                   <i class="fa-brands fa-facebook"></i> 
+
+                 </div>
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+<script src="js/main.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>

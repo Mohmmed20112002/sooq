@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #fff;
+    position: relative;
+}
+
+.nav .logo{
+    width: 20%;
+}
+
+.nav .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #858cec;
+    font-weight: bold;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    width: 80%;
+    transition: 0.4s ease;
+}
+
+.nav ul li{
+    padding: 0px 20px;
+    font-size: 17px;
+}
+
+.nav ul li:hover{
+    cursor: pointer;
+    color: rgb(78, 38, 255);
+}
+
+#li_2 select,
+#li_3 select{
+    background-color: inherit;
+    font-family: 'Cairo', sans-serif;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* زر تسجيل الدخول */
+.sin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.sin button{
+    color: white;
+    font-size: 13px;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(78, 38, 255);
+    font-family: 'Cairo', sans-serif;
+    transition: 0.3s;
+}
+
+.sin button:hover{
+    background-color: #858cec;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger i{
+    font-size: 28px;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type=text] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: left;
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1365px) {
+    .nav .logo {
+    width: 50%;
+    padding: 10px 0px 10px 14px;
+}
+.nav .logo a {
+  font-size: 20px;
+}
+ .nav {
+    padding: 10px 20px !important;
+  }
+  .nav ul {
+    position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: white;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        transform: translateY(-400px);
+        opacity: 0;
+        pointer-events: none;
+        border-top: 1px solid #eee;
+  }
+    .nav ul.show{
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav ul li{
+        margin: 18px 0;
+        font-size: 18px;
+    }
+
+    /* زر تسجيل الدخول داخل القائمة */
+    .sin{
+        margin-left: 0;
+    }
+
+    .burger{
+        display: flex;
+        align-items: center;
+    }
+.sin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px 10px 0px;
+    gap: 20px;
+    width: auto;
+}
+
+}
+@media (max-width: 768px){
+    
+  .nav .logo {
+    width: 50%;
+    padding: 10px 0px 10px 14px;
+}
+.nav .logo a {
+  font-size: 20px;
+}
+ .nav {
+    padding: 10px 20px !important;
+  }
+  .nav ul {
+    position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: white;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        transform: translateY(-400px);
+        opacity: 0;
+        pointer-events: none;
+        border-top: 1px solid #eee;
+  }
+    .nav ul.show{
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav ul li{
+        margin: 18px 0;
+        font-size: 18px;
+    }
+
+    /* زر تسجيل الدخول داخل القائمة */
+    .sin{
+        margin-left: 0;
+    }
+
+    .burger{
+        display: flex;
+        align-items: center;
+    }
+.sin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px 10px 0px;
+    gap: 20px;
+    width: auto;
+}
+}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Admin_dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="image/login_image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>Sooq Code</title>
+</head>
+<body>
+   <section class="page">
+     <section class="mune">
+        <div class="title">
+            <h3>لوحة التحكم</h3>
+            <p>مرحبا بك</p>
+        </div>
+        <!--عناصر لوحة التحكم-->
+        <div class="ul_mune">
+           <ul class="sidebar-menu">
+              <li id="home" class="active">
+               <i class="fa-solid fa-house"></i>
+               <p>الرئيسية</p>
+              </li>
+  <li id="prodect">
+    <i class="fa-solid fa-box-open"></i>
+    <p>المنتجات</p>
+  </li>
+  <li id="freelancer">
+    <i class="fa-solid fa-users"></i>
+    <p>المستقلين</p>
+  </li>
+  <li id="sellers">
+    <i class="fa-solid fa-store"></i>
+    <p>البائعين</p>
+  </li>
+  <li id="article">
+    <i class="fa-solid fa-file-lines"></i>
+    <p>المقالات</p>
+  </li>
+  <li id="Social">
+    <i class="fa-solid fa-share-nodes"></i>
+    <p>التواصل الاجتماعي</p>
+  </li>
+  <li id="payment">
+    <i class="fa-solid fa-credit-card"></i>
+    <p>المدفوعات</p>
+  </li>
+  <li id="orders">
+    <i class="fa-solid fa-comment"></i>
+    <p>الطلبات</p>
+  </li>  
+</ul>
+        </div>
+        <!--الضبط و تسجيل الخروج-->
+        <div class="log_out">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <p>تسجيل الخروج</p>
+                </li>
+            </ul>
+        </div>
+     </section>
+     <!--محتوي الصفحه-->
+     <section class="content">
+        <div class="serch">
+            <div class="continer">
+                <input type="text" placeholder="ابحث في لوحة التحكم">
+                <button class="btn_serch">ابحث</button>
+            </div>
+        </div>
+            <!--الصفحه الرئيسيه-->
+            <div class="home_page" id="home_page">
+                <div class="header_home">
+                    <div class="card">
+                        <div class="header_icon">
+                           <i class="fa-solid fa-money-bills"></i>
+                        </div>
+                        <div class="hreader_text">
+                            <p>
+                                الارباح 
+                            </p>
+                            <p id="Profits"></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="header_icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="hreader_text">
+                            <p>
+                                الزيارات 
+                            </p>
+                            <p id="Visits"></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header_icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="hreader_text">
+                            <p>
+                                المبيعات 
+                            </p>
+                            <p id="Sales"></p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="header_icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="hreader_text">
+                            <p>
+                                  الذكاء الصناعي
+                            </p>
+                            <p id="AI"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sales">
+                    <div class="title_sale">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>
+                            المبيعات
+                        </p>
+                    </div>
+                    <div class="serch">
+                      <input type="text" name="" id="sale_serch" placeholder="البحث بالتاريخ او اسم العميل او اسم المنتج">
+                      <button class="sale_btnserch">بحث</button>
+                    </div>
+ <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>المنتج</th>
+          <th>البائع</th>
+          <th>العميل</th>
+          <th>رقم العميل</th>
+          <th>بريد العميل</th>
+          <th>العنوان</th>
+          <th>السعر</th>
+          <th>الربح</th>
+          <th>التاريخ</th>
+          <th>النوع</th>
+        </tr>
+      </thead>
+      <tbody id="prodect_sale">
+        
+      </tbody>
+    </table>
+    <div class="sheet_btn">
+     <button class="sheet">تحميل تقرير المبيعات</button>
+    </div>
+  </div>
+                </div>
+            </div>
+            <!--نهاية الصفحه الر ئيسيه-->
+            <!--صفحة المنتجات-->
+          <div class="not_active" id="prodect_page">
+
+            <div class="add_section">
+                <div class="text">
+                    <h3>المنتجات</h3>
+                    <p>ادراة جميع منتجات المتجر بكفاءه</p>
+                </div>
+                <div class="btn_section">
+                    <button class="add_btn" >
+                        <p> اضافة منتج جديد</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="section_serch">
+                    <input type="text" placeholder="ابحث عن منتج ....." id="prodect_serch">
+                    <button class="prodect_serch">بحث</button>
+                </div>
+                <div class="ul">
+                  <ul>
+                    <li id="web_side">مواقع </li>
+                    <li id="web_them">قوالب </li>
+                    <li id="code_app">اكواد</li>
+                    <li id="appliction">تطبيقات </li>
+                  </ul>
+                </div>
+                <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>المنتج</th>
+          <th>كود المنتج</th>
+          <th>الفئه</th>
+          <th>البائع</th>
+          <th>السعر</th>
+          <th>مشاهده</th>
+          <th>تحميل</th>
+          <th>الحاله</th>
+          <th>الربح</th>
+        </tr>
+      </thead>
+      <tbody id="prodects">
+      
+          </tbody>
+          </table>
+          </div>
+          </div>
+          </div>  
+            <!--نهاية صفحة المنتجات-->
+          <!--بدياية صفحة المستقلين-->
+          
+            <div class="not_active" id="freelanser_page">
+            <div class="add_section">
+                <div class="text">
+                    <h3>المستقلين</h3>
+                    <p>ادراة المستقلين المسجلين في المنصه</p>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="section_serch">
+                    <input type="text" placeholder="ابحث عن مستقل ....." id="freelanc_serch">
+                    <button id="freelanc_btn">بحث</button>
+                </div>
+                <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>المستقل</th>
+          <th>الايميل</th>
+          <th>رقم التلفون</th>
+          <th> المجال</th>
+          <th>المهارات</th>
+          <th> الخبره</th>
+          <th>العنوان</th>
+          <th>linked_in</th>
+          <th>ايميل الدفع</th>
+          <th>الوصف</th>
+        </tr>
+      </thead>
+      <tbody id="freelanc">
+       
+          </tbody>
+          </table>
+          </div>
+          </div>
+          </div>  
+           <!--نهاية صفحة المستقلين-->
+           <!--بداية صفحة البائعين-->
+           
+            <div class="not_active" id="Sellers_page">
+            <div class="add_section">
+                <div class="text">
+                    <h3>البائعين</h3>
+                    <p>ادراة البائعين المسجلين في المنصه</p>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="section_serch">
+                    <input type="text" placeholder="ابحث عن بائع ....." id="sales_serch">
+                    <button id="sales_btn">بحث</button>
+                </div>
+                <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>البائع</th>
+          <th>الكود</th>
+          <th>المحفظه</th>
+          <th>الايميل</th>
+          <th>رقم الهاتف</th>
+          <th>ملف التحقق</th>
+          <th>حالة الحساب</th>
+          <th>حذف</th>
+          <th>تفعيل</th>
+        </tr>
+      </thead>
+      <tbody id="sales_tbody">
+       
+          </tbody>
+          </table>
+          </div>
+          </div>
+          </div>  
+           <!--نهاية صفحة البائعين-->
+           <!--بداية صفحة المقالات-->
+            <div class="not_active" id="articles_page">
+            <div class="add_section">
+                <div class="text">
+                    <h3>المقالات</h3>
+                    <p>ادراة المقالات المدونه و المحتوي  بكفاءه</p>
+                </div>
+
+                <div class="btn_section">
+                    <button class="add_btn" id="add_article">
+                        <p>اضافة مقال جديد</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+            </div>
+
+
+            <div class="sections" >
+                <div class="section_serch">
+                    <input type="text" placeholder="ابحث عن مقال ....." class="attical_serch">
+                    <button id="attical_serch">بحث</button>
+                </div>
+              <div id="articales"> 
+                </div>
+            </div>
+             
+          </div>
+          </div>  
+           <!--نهاية صفحة المقالات-->
+           <!--بداية صفحة التواصل الاجتماعي -->
+           <form action="php/socali_add.php" method="get"> 
+            <div class="not_active" id="Social_page">
+            <div class="add_section">
+                <div class="text">
+                    <h3>روابط التواصل الاجتماعي </h3>
+                    <p>ادراة روابط التواصل الاجتماعي  للموقع</p>
+                </div>
+
+                <div class="btn_section">
+                    <button class="add_btn" id="social_btn" type="submit">
+                        <p> حفظ التغيرات</p>
+                        <i class="fa-regular fa-floppy-disk"></i>
+                    </button>
+                  </div>
+            </div>
+            <div class="socail_box">
+              <div class="socail_card">
+                <div class="socail_icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <p>فيسبوك</p>
+                </div>
+                <div class="socail_link">
+                  <input type="text" placeholder="www.facebook.com"name="fac" id="fac">
+                  <p>سيتم عرض هذا الرابط في الموقع</p>
+                </div>
+              </div>
+              <div class="socail_card">
+                <div class="socail_icon">
+                  <i class="fa-brands fa-instagram"></i>
+                  <p>انستجرام</p>
+                </div>
+                <div class="socail_link">
+                  <input type="text" placeholder="www.instgrame.com" name="ins" id="ins">
+                  <p>سيتم عرض هذا الرابط في الموقع</p>
+                </div>
+              </div>
+              <div class="socail_card">
+                <div class="socail_icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <p>لينكد ان</p>
+                </div>
+                <div class="socail_link">
+                  <input type="text" placeholder="linkedin.com" name="lin" id="lin">
+                  <p>سيتم عرض هذا الرابط في الموقع</p>
+                </div>
+              </div>
+              <div class="socail_card">
+                <div class="socail_icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <p>واتساب</p>
+                </div>
+                <div class="socail_link">
+                  <input type="text" placeholder="0123456789" name="wha" id="wha">
+                  <p>سيتم عرض هذا الرابط في الموقع</p>
+                </div>
+              </div>
+              <div class="socail_card">
+                <div class="socail_icon">
+                  <i class="fa-regular fa-envelope"></i>
+                  <p>البريد الالكتروني</p>
+                </div>
+                <div class="socail_link">
+                  <input type="text" placeholder="YourEmail@gmail.com" name="mal" id="mal">
+                  <p>سيتم عرض هذا الرابط في الموقع</p>
+                </div>
+              </div>
+            </div>
+            <div class="socail_view">
+              <div class="social_text">
+                <p>معاينة الروابط</p>
+              </div>
+              <div class="socail_icon">
+              <a href="" id="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="" id="instgram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="" id="linkedin"> <i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="" id="email"> <i class="fa-regular fa-envelope"></i></a>
+              </div>
+            </div>
+
+            </div>
+            </form>
+           <!--نهاية صفحة التواصل الاجتماعي -->
+           <!-- بداية صفحة المدفوعات-->
+             <div class="not_active" id="payment_page">
+            <div class="add_section">
+                <div class="text">
+                    <h3>البائع</h3>
+                    <p>ادراة جميع طلبات الدفع المسجله في المنصه</p>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="section_serch">
+                    <input type="text" placeholder="ابحث عن بائع .....">
+                    <button>بحث</button>
+                </div>
+                <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>البائع</th>
+          <th>الكود</th>
+          <th>مبلغ الدفع</th>
+          <th>Pay Pal</th>
+          <th>رقم الهاتف</th>
+          <th>الايميل</th>
+          <th>حالة الطلب</th>
+        </tr>
+      </thead>
+      <tbody class="tbody_payment">
+       
+          </tbody>
+          </table>
+          </div>
+          </div>
+          </div>  
+          <!--نهاية صفحة المدفوعات -->
+          <!--بداية صفحة الطلبات-->
+           <div class="not_active" id="orders_page">
+            <div class="add_section">
+                <div class="text">
+                    <h3>الطلبات</h3>
+                    <p>ادراة طلبات الخدمات المسجله في المنصه</p>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="section_serch">
+                    <input type="text" placeholder="ابحث عن الطلب .....">
+                    <button>بحث</button>
+                </div>
+                <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>نوع الخدمه</th>
+          <th>الكود</th>
+          <th>الاسم الكامل </th>
+          <th>البريد الالكتروني</th>
+          <th>رقم الهاتف </th>
+          <th>تفاصيل الطلب</th>
+          <th>حذف</th>
+        </tr>
+      </thead>
+      <tbody id="serves">
+       
+          </tbody>
+          </table>
+          </div>
+          </div>
+          </div>  
+          <!--نهاية صفحة الطلبات-->
+     </section>
+   </section> 
+   <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+   <script src="js/Admin_dashboard.js"></script>
+</body>
+</html>

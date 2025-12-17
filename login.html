@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="image/login_image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sooq Code</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="title">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h4>مرحبا بك</h4>
+            <p> قم بتسجيل الدخول للوصول الي حسابك  </p>
+        </div>
+        <div class="continer">
+           <span>
+            <h4>تسجيل الدخول</h4>
+            <p>ادخل بياناتك للوصول الي لوحة التحكم</p>
+           </span>
+           <span>
+            <p> * البريد الالكتروني</p>
+            <input type="email" name="Email" placeholder="ادخل البريد الالكتروني " id="email">
+           </span>
+           <span>
+            <p> * كلمة المرور </p>
+            <input type="password" name="pas" placeholder="**********" id="passwoed" >
+           </span>
+           <span class="type">
+            <p> * نوع الحساب </p>
+            <select name="account_type" id="account_type" class="account_type">
+                <option value="account">اختر نوع الحساب</option>
+                <option value="seller">بائع</option>
+                <option value="freelanser">مستقل</option>
+            </select>
+           </span> 
+           <div class="span1">
+            <span>
+                <p> * اظهار كلمة المرور</p>
+                <input type="checkbox" id="view_pass">
+            </span>
+
+            <span> 
+            <p class="reset_pass" style="color: #007bff; margin-bottom: 13px; cursor: pointer;">نسيت كلمة المرور ؟ </p>
+            </span>
+
+            </div>
+
+           <span class="button">
+            <button class="btn">
+                <p>تسجيل الدخول</p>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </button>
+           </span>
+           <span class="creat_acount">
+            <p>ليس لديك حساب؟</p>
+            <a href="singin.html">انشاء حساب جديد</a>
+           </span>
+        </div>
+    </form>
+    <script src="js/login.js"></script>
+</body>
+</html>

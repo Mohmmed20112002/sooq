@@ -1,0 +1,551 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #eeeeee;
+}
+.header{
+    width: 100%;
+}
+
+/* ================= NAV BAR ================= */
+/*
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #fff;
+    position: relative;
+}
+
+.nav .logo{
+    width: 20%;
+}
+
+.nav .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #858cec;
+    font-weight: bold;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    width: 80%;
+    transition: 0.4s ease;
+}
+
+.nav ul li{
+    padding: 0px 20px;
+    font-size: 17px;
+}
+
+.nav ul li:hover{
+    cursor: pointer;
+    color: rgb(78, 38, 255);
+}
+
+#li_2 select,
+#li_3 select{
+    background-color: inherit;
+    font-family: 'Cairo', sans-serif;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* زر تسجيل الدخول */
+.sin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.sin button{
+    color: white;
+    font-size: 13px;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(78, 38, 255);
+    font-family: 'Cairo', sans-serif;
+    transition: 0.3s;
+}
+
+.sin button:hover{
+    background-color: #858cec;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger i{
+    font-size: 28px;
+}
+.main_page{
+display: flex;
+flex-direction: row-reverse;
+}
+.section_search{
+    width: 25%;
+    padding: 20px;
+}
+.search_box{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.search_box span{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.search h4{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.search_box input{
+    border: none;
+    outline: none;
+    width: 90%;
+    font-family: 'Cairo', sans-serif;
+    text-align: right;
+    padding: 10px;
+}
+.search_box input:focus{
+    border: 2px solid #858cec;
+    border-radius: 5px;
+    outline: none;
+}
+.search button{
+    width: 90%;
+    height: 25px;
+    border: none;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    background-color: rgb(78, 38, 255);
+    border-radius: 5px;
+}
+.search_price{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.price span{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+.price span input{
+    border: none;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+}
+.search_type{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.type {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  font-family: 'Cairo', sans-serif;
+
+}
+
+.type label {
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Cairo', sans-serif;
+
+}
+
+.type select {
+  padding: 8px 12px;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: 'Cairo', sans-serif;
+
+}
+
+.type select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px #007bff44;
+}
+.section_prodect{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 75%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.web_continer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+.web_card{
+    width: 330px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.web_text{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 25px;
+    gap: 10px;
+}
+.web_text h4{
+    color: rgba(27, 27, 27, 0.753);
+}
+.web_text p{
+    font-size: 14px;
+    color: gray;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    text-align: right;
+    height: 60px;
+}
+.web_card .web_img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.web_card:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.web_img img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+.web_tec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 90%;
+    margin-top: 10px;
+    gap: 15px;
+    
+}
+.Evaluation{
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+}
+.Evaluation i{
+    color: #f5c518;
+    font-size: 16px;}
+.web_tec span{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.web_tec ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0px 20px;
+}
+.web_tec ul li{
+    background-color: none;
+    border: 2px solid #eee;
+    border-radius: 20px;
+    padding: 2.5px 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.web_price{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+.web_price button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    background-color: rgb(255, 2, 2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.web_price button:hover{
+    background-color: rgb(29, 33, 245);
+}
+.number{
+    font-size: 20px;
+    font-weight: bold;
+}
+.number span{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px;
+    color: rgba(27, 27, 27, 0.753);
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+.number button{
+    padding:10px 12px;
+    border-radius: 50%;
+    border: 2px solid #eeee;
+    background-color: white;
+}
+.number button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #0d0d0d;
+  color: #eee;
+  padding: 60px 10%;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+}
+
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer_col {
+  flex: 1 1 220px;
+}
+
+.footer_logo {
+  color: #00d8ff;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.footer_col h4 {
+  color: #00d8ff;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer_col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_col ul li {
+  margin-bottom: 10px;
+}
+
+.footer_col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer_col ul li a:hover {
+  color: #00d8ff;
+}
+
+.social_icons a {
+  display: inline-block;
+  background: #222;
+  color: #00d8ff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+.social_icons a:hover {
+  background: #00d8ff;
+  color: #000;
+}
+
+.footer_bottom {
+  border-top: 1px solid #222;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.footer_bottom span {
+  color: #00d8ff;
+}
+@media only screen and (max-width: 1024px) {
+    .section_search{
+        width: 30%;
+    }
+    .section_prodect{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /*
+ .nav .logo {
+    width: 50%;
+    padding: 10px 0px 10px 14px;
+}
+.nav .logo a {
+  font-size: 20px;
+}
+ .nav {
+    padding: 10px 20px !important;
+  }
+  .nav ul {
+    position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: white;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        transform: translateY(-400px);
+        opacity: 0;
+        pointer-events: none;
+        border-top: 1px solid #eee;
+  }
+    .nav ul.show{
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav ul li{
+        margin: 18px 0;
+        font-size: 18px;
+    }
+
+    /* زر تسجيل الدخول داخل القائمة */
+    .sin{
+        margin-left: 0;
+    }
+
+    .burger{
+        display: flex;
+        align-items: center;
+    }
+.sin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px 10px 0px;
+    gap: 20px;
+    width: auto;
+}
+    .main_page{
+        flex-direction: column;
+    }
+    .section_search{
+        width: 100%;
+    }
+    .section_prodect{
+        width: 100%;
+    }
+
+    .sin{
+        width: 50%;
+        padding: 10px 20px 10px 0px;
+    }
+}

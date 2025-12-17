@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="image/login_image/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sooq Code</title>
+</head>
+<body>
+   <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"> <img src="img/logo.png" alt=""></a>
+
+                <div id="search_box">
+
+                    <div class="select_box">
+                        <select id="category" name="category" class="select_serch">
+                          <option value="web_them.json">قوالب مواقع</option>
+                          <option value="web_side.json">مواقع فعليه</option>
+                          <option value="appliction.json">تطبيقات فعليه</option>
+                          <option value="app_code.json">اكواد تطبيقات</option>
+                        </select>
+                    </div>
+
+                    <input type="text" name="search" class="serch" id="search" placeholder="ابحث عن منتج" required>
+
+                    <button type="submit" class="serch_btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    
+
+                </div>
+
+                <div class="header_icons">
+                    
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-solid fa-moon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+                    <div class="category_nav">
+
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>الاقسام</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+
+
+                        <div class="category_nav_list">
+                            <a href="#">قوالب مواقع</a>
+                            <a href="#"> مواقع فعليه</a>
+                            <a href="#">قوالب تطبيقات</a>
+                            <a href="#">تطبيقات فعليه</a>
+                        </div>
+
+                    </div>
+
+                    <ul class="nav_links">
+
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="home active"><a href="#">الرئيسيه</a></li>
+                        <li><a href="#">قوالب مواقع</a></li>
+                        <li><a href="#">مواقع فعليه</a></li>
+                        <li class="blog"><a href="#">المدونه</a></li>
+                        <li><a href="#">قوالب تطبيقات</a></li>
+                        <li><a href="#">تطبيقات فعليه </a></li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="login_signup btns">
+                    <a href="login.html" class="btn">تسجيل الدخول  <i class="fa-solid fa-right-to-bracket"></i></a>
+
+                    <a href="singin.html" class="btn">تسجيل حساب<i class="fa-solid fa-user-plus"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </header>
+    <main class="main_page">
+        <!--البحث-->
+        <section class="section_search">
+            <div class="search search_box">
+                <span ><h4>البحث بالاسم و الوصف</h4></span>
+                <input type="text" placeholder="ابحث عن خدمه" class="prodect_name">
+                <button class="btn_search">بحث</button>
+            </div>
+            <div class="search search_price">
+                <span><h4>البحث بالسعر</h4></span>
+                <span class="price"> 
+                    <span> 
+                <label for="">-: من</label>
+                <input type="number" placeholder="السعر الاقل" class="price_down">
+                </span>
+                <span> 
+                <label for="">-: الى</label>
+                <input type="number" placeholder="السعر الاعلى" class="price_up">
+                </span>
+                <button class="btn_price">بحث</button>
+                 </span>
+            </div>
+              <div class="search search_type">
+               <h4>البحث بالفئه</h4>
+                 <span class="type">
+                    <select id="category" name="category">
+                     <option value="الكل">الكل</option>
+                     <option value="تجاري">تجاري</option>
+                     <option value="تعليمي">تعليمي</option>
+                     <option value="إخباري">إخباري</option>
+                     <option value="خدمي">خدمي</option>
+                     <option value="شخصي">شخصي</option>
+                    </select>
+                  </span>
+              </div>
+              <div class="search search_box " style="margin-top: 20px;">
+                <span ><h4>البحث بالتقنيه</h4></span>
+                <input type="text" placeholder="ابحث عن تقنيه" class="tecno">
+                <button class="btn_search" id="tec_serch">بحث</button>
+            </div>
+
+        </section>
+        <!--المنتجات-->
+        <section class="section_prodect">
+            <div class="web_continer">
+
+            </div>
+            <div class="number">
+               <button class="Minus">
+                <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <span class="page"></span>
+               <button class="plus">
+                <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy;<span>Sooq Code.</span>  جميع الحقوق محفوظه لصالح موقع  </p>
+                 <div class="social_icon">
+                   <i class="fa-brands fa-facebook"></i> 
+
+                 </div>
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+<script src="js/main.js"></script>
+<script src="js/prodects.js"></script>
+</body>
+</html>

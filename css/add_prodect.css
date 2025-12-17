@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #eeeeee;
+}
+form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px; 
+}
+.title{
+    background-color: inherit;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title span{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.title span:nth-child(1) p{
+    font-size: 25px;
+    font-weight: 360;
+}
+.title span i{
+    color: rgb(92, 92, 255);
+    font-size: 30px;
+}
+
+section{
+    background-color: white;
+    width: 70%;
+    border-radius: 20px;
+    border: 2px solid #d8d7d7;
+    padding: 20px;
+}
+section span{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+section span p{
+    text-align: right;
+}
+section input,
+section select,
+section textarea{
+    width: 100%;
+    height: 40px;
+    font-family:'Cairo', sans-serif;
+    padding: 5px;
+    text-align: right;
+    border-radius: 8px;
+    border: 2px solid #d8d7d7;
+}
+
+section h4{
+    font-weight: 400;
+    font-size: 20px;
+}
+.prodet_img img{
+    display: flex;
+}
+.prodet_img img span{
+    background-color: #d8d7d7;
+    width: 25%;
+    height: 100px;
+}
+.btn{
+    background-color: inherit;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+.btn button{
+    font-family:'Cairo', sans-serif;
+    padding: 7px 25px;
+     border-radius: 5px;
+     cursor: pointer;
+}
+.btn button:nth-child(1){
+    color: white;
+    background-color: blue;
+    border: none;
+   
+}
+.btn button:nth-child(2){
+    border: 2px solid #96969670;
+}
+.side,
+.operating_system,
+.appliction{
+    display: none;
+}
+#seller{
+    display: none;
+}
+#seller div{
+    display: flex;
+    gap: 20px;
+}
+#seller div span{
+    width: 100%;
+}
+/* ----- القواعد الحالية ----- */
+/* احتفظت بكل كودك الأصلي */
+
+/* ----- تفاعل مع الشاشات الكبيرة نسبياً ----- */
+@media screen and (max-width: 1200px) {
+    section {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .btn {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .btn button {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #seller div {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* ----- الشاشات المتوسطة (Tablets) ----- */
+@media screen and (max-width: 768px) {
+    section {
+        width: 95%;
+        padding: 10px;
+    }
+
+    section input,
+    section select,
+    section textarea {
+        height: 35px;
+        padding: 5px;
+    }
+
+    .title span:nth-child(1) p {
+        font-size: 22px;
+    }
+
+    .title span i {
+        font-size: 28px;
+    }
+
+    .btn {
+        gap: 10px;
+    }
+}
+
+/* ----- الشاشات الصغيرة (هواتف) ----- */
+@media screen and (max-width: 480px) {
+    section {
+        width: 100%;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    section span p {
+        font-size: 14px;
+    }
+
+    section input,
+    section select,
+    section textarea {
+        height: 30px;
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .title span:nth-child(1) p {
+        font-size: 18px;
+    }
+
+    .title span i {
+        font-size: 24px;
+    }
+
+    .btn {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .btn button {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    #seller div {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="image/login_image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/add_article.css">
+    <title>Sooq Code</title>
+</head>
+<body>
+   <section class="add_article">
+    <div class="header">
+      <i class="fa-regular fa-file"></i>
+      <p id="titel">اضافة مقال جديد</p>
+      <p id="sub_title">قم بملء النموذج ادناه لاضافة مقال جديد الي الموقع</p>
+    </div>
+    <form action="php/add_artical.php" method="post" enctype="multipart/form-data" id="form">
+        <div class="title">
+            <span>
+                <p>معلومات المقال</p>
+                <i class="fa-regular fa-file"></i>
+            </span>
+            <span>
+                <p> * عنوان المقال </p>
+                <input type="text" name="article_title" placeholder=" ............ادخل عنوان المقال " >
+            </span>
+            <span>
+                <p> * الوصف المختصر</p>
+                <textarea name="subtitle" id="" placeholder="اكتب وصفا مختصرا للمقال"></textarea>
+            </span>
+            <span>
+                <p> *  رابط المقال  </p>
+                <input type="text" name="article_link" placeholder=" ............ادخل رابط المقال ">
+            </span>
+        </div>
+        <div class="btn">
+            <button type="submit" id="submit">نشر المقال</button>
+            <button type="reset" id="reset">اعادة تعيين</button>
+        </div>
+    </form>
+    <script src="js/add_article.js"></script>
+   </section> 
+</body>
+</html>

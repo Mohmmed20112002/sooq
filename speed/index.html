@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sooq Code</title>
+    <link rel="stylesheet" href="pagespeed.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+
+            <h1> قياس سرعة المواقع</h1>
+        </div>
+
+        <div class="card">
+            <form id="speedTestForm">
+                <div class="input-group">
+                    <input 
+                        type="url" 
+                        id="websiteUrl" 
+                        placeholder="أدخل رابط الموقع (مثال: https://example.com)" 
+                        required
+                    >
+                    <select id="strategy">
+                        <option value="mobile">موبايل</option>
+                        <option value="desktop">سطح المكتب</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn" id="testBtn">
+                    <span style="position: relative; z-index: 1;">تحليل السرعة</span>
+                </button>
+            </form>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>جاري تحليل الموقع... قد يستغرق هذا بضع ثوانٍ</p>
+            </div>
+
+            <div class="error" id="error"></div>
+
+            <div class="results" id="results">
+                <div class="score-section" id="scoreSection"></div>
+                <div class="metrics-grid" id="metricsGrid"></div>
+                <div class="opportunities" id="opportunities"></div>
+            </div>
+        </div>
+    </div>
+<script src="pagespeed.js"></script>
+</body>
+</html>
+

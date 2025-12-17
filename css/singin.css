@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  background: radial-gradient(
+    circle at bottom right,
+    #e0f7ff 0%,
+    #66c2ff 5%,
+    #005f99 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form{
+  width: 100%;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.title i{
+  font-size: 35px;
+  color: #005f99;
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.continer{
+  background-color: white;
+  width: 700px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* جميع العناصر */
+div{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+span{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+span input,
+select{
+  width: 100%;
+  text-align: right;
+  padding: 2px;
+  border-radius: 5px;
+  border: 2px solid #8d8d8d;
+  font-family: 'Cairo', sans-serif;
+}
+
+.button{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  font-family: 'Cairo', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  gap: 20px;
+  padding: 5px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+}
+
+.Sing_whit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 10px;
+}
+.Sing_whit i{
+ border-radius: 50%;
+ box-shadow: 0 0 3px rgba(0,0,0,0.5);
+ padding: 5px 6px;
+}
+.Sing_whit i:nth-child(1){
+ color: rgb(255, 69, 69);
+}
+.Sing_whit i:nth-child(2){
+ color: rgb(81, 69, 255);
+ padding: 6px 9px;
+}
+.Sing_whit i:nth-child(3){
+ color: rgb(69, 143, 255);
+}
+
+.creat_acount{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.creat_acount a{
+  text-decoration: none;
+  color: #007bff;
+}
+
+.view_pass{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 35px;
+}
+.view_pass input{
+  width: 20px;
+}
+
+.id_seller{
+  display: none;
+}
+
+/* ================   الريسبونسيف   ================= */
+
+/* شاشات أقل من 768px - موبایل */
+@media (max-width: 768px){
+  .continer{
+    width: 95%;
+    height: auto;
+    padding: 15px;
+  }
+
+  div{
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  span{
+    width: 100%;
+  }
+
+  .title i{
+    font-size: 30px;
+    padding: 15px;
+  }
+}
+
+/* شاشات أقل من 480px - موبایل صغير */
+@media (max-width: 480px){
+  .continer{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .btn{
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .title i{
+    font-size: 28px;
+  }
+
+  form{
+    padding: 10px;
+  }
+}

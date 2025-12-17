@@ -1,0 +1,52 @@
+   .nav .logo {
+    width: 50%;
+    padding: 10px 0px 10px 14px;
+}
+.nav .logo a {
+  font-size: 20px;
+}
+ .nav {
+    padding: 10px 20px !important;
+  }
+  .nav ul {
+    position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: white;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        transform: translateY(-400px);
+        opacity: 0;
+        pointer-events: none;
+        border-top: 1px solid #eee;
+  }
+    .nav ul.show{
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav ul li{
+        margin: 18px 0;
+        font-size: 18px;
+    }
+
+    /* زر تسجيل الدخول داخل القائمة */
+    .sin{
+        margin-left: 0;
+    }
+
+    .burger{
+        display: flex;
+        align-items: center;
+    }
+.sin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px 10px 0px;
+    gap: 20px;
+    width: auto;
+}

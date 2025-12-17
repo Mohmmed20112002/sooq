@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Sooq Code</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="image/login_image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header>
+     <nav class="nav">
+    <h1 class="logo"><a href="#">Sooq Code</a></h1>
+
+    <ul id="navList">
+        <li id="li_1">الرئيسيه</li>
+        <li id="li_2">
+            <select id="app">
+                <option value="">تطبيقات</option>
+                <option value="appliction">تطبيقات فعليه</option>
+                <option value="code_app">اكواد تطبيقات</option>
+            </select>
+        </li>
+        <li id="li_3">
+            <select id="web">
+                <option value="">مواقع</option>
+                <option value="web_them">قوالب مواقع</option>
+                <option value="web_side">مواقع فعليه</option>
+            </select>
+        </li>
+        <li id="li_4"><a href="#request_info">اطلب خدمه</a></li>
+        <li id="li_5"><a href="#services">خدماتنا</a></li>
+        <li id="li_6"><a href="#contact">تواصل معنا</a></li>
+        <li><a href="http://localhost/web_stor/blog.html">المدونه</a></li>
+        <li class="sin"><button class="login">تسجيل الدخول</button></li>
+    </ul>
+
+    <div class="burger">
+        <i class="fa-solid fa-list"></i>
+    </div>
+</nav>
+   </header> 
+<div class="container">
+    <h1>فحص أمان أي موقع</h1>
+    <form id="securityForm">
+        <input type="text" id="domain" name="domain" placeholder="مثال: https://mostaql.com/ أو mostaql.com" required>
+        <button type="submit">تحقق</button>
+    </form>
+
+    <div id="loading" class="hidden">جارٍ الفحص... (قد يستغرق SSL Labs بعض الثواني)</div>
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

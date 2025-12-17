@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/seller_dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="image/login_image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>Sooq Code</title>
+</head>
+<body>
+   <section class="page">
+     <section class="mune">
+        <div class="title">
+            <h3>لوحة التحكم</h3>
+            <p>مرحبا بك</p>
+        </div>
+        <!--عناصر لوحة التحكم-->
+        <div class="ul_mune">
+           <ul class="sidebar-menu">
+              <li id="home" class="active">
+               <i class="fa-solid fa-house"></i>
+               <p>الرئيسية</p>
+              </li>
+  <li id="prodect">
+    <i class="fa-solid fa-box-open"></i>
+    <p>المنتجات</p>
+  </li> 
+  <li id="set">
+  <i class="fa-solid fa-gear"></i>
+  <p>الاعدادت</p> 
+  </li>
+</ul>
+        </div>
+        <!--الضبط و تسجيل الخروج-->
+        <div class="log_out">
+            <ul>
+             
+                <li>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <p>تسجيل الخروج</p>
+                </li>
+            </ul>
+        </div>
+     </section>
+     <!--محتوي الصفحه-->
+     <section class="content">
+        <div class="serch">
+            <div class="continer">
+                <input type="text" placeholder="ابحث في لوحة التحكم">
+                <button class="btn_serch">ابحث</button>
+            </div>
+        </div>
+            <!--الصفحه الرئيسيه-->
+            <div class="home_page" id="home_pag">
+                <div class="header_home">
+                    <div class="card Balance">
+                    <div>
+                      <span> 
+                      <p>الرصيد المتاح</p>
+                      <h3 class="wellet"></h3>
+                      </span>
+                      <span>
+                        <i class="fa-solid fa-wallet" style="font-size: 26px;"></i>
+                      </span>
+                    </div>  
+                    <div class="balance_paypal">
+                      <span>
+                        <p>: pay pal</p>
+                        <input type="text" name="pay_pal" placeholder="ادخل الايميل الذي تريد استقبال المدفوعات عليه"class=paypal_mail>
+                      </span>
+                    </div>
+                    <div class="Balance_btn">
+                      <button class="withdrawal">سحب الرصيد</button>
+                    </div>
+                    </div>            
+                </div>
+
+                <div class="sales">
+                    <div class="title_sale">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>
+                            المبيعات
+                        </p>
+                    </div>
+ <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>المنتج</th>
+          <th>التاريخ</th>
+          <th>السعر</th>
+          <th>العموله</th>
+        </tr>
+      </thead>
+      <tbody id="prodect_sale">
+        
+      </tbody>
+    </table>
+  </div>
+          </div>
+            </div>
+            <!--نهاية الصفحه الر ئيسيه-->
+            <!--صفحة المنتجات-->
+          <div class=" " id="prodect_page" style="display: none;">
+             <div class="home_page" id="home_page">
+                <div class="header_home">
+                    <div class="peodect_card" >
+                        <div>
+                          <i class="fa-brands fa-google-play"></i>
+                        </div>
+                        <div>
+                          <h2>التنازل عن ملكية تطبيق</h2>
+                          <p>قبل ان تقوم بعملية عرض نطبيقك الموجود بالفعل علي متجر التطبيقات اقراء المقال التالي بعنايه لمعرفة الاجراءات المطلوبه </p>
+                        </div>
+                        <div>
+                          <button class="art_app" >شاهد المقال </button>
+                        </div>
+                    </div>
+                    <div class="peodect_card">
+                        <div>
+                          <i class="fa-solid fa-blog"></i>
+                        </div>
+                        <div>
+                          <h2>التنازل عن ملكية موقع الكتروني</h2>
+                          <p>قبل ان تقوم بعملية عرض موقعك الالكتروني الموجود بالفعل علي شبكة الانترنت اقراء المقال التالي بعنايه لمعرفة الاجراءات المطلوبه </p>
+                        </div>
+                        <div>
+                          <button class="atr_web">شاهد المقال </button>
+                        </div>
+                    </div>
+
+
+            <div class="add_section">
+                <div class="text">
+                    <h3>المنتجات</h3>
+                    <p>ادراة جميع منتجات المتجر بكفاءه</p>
+                </div>
+                <div class="btn_section">
+                    <button class="add_btn" >
+                        <p> اضافة منتج جديد</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="section_serch">
+                    <input type="text" placeholder="ابحث عن منتج ....." class="serct_data">
+                    <button class="serch_btn">بحث</button>
+                </div>
+                <div class="ul">
+                  <ul>
+                    <li id="web">مواقع</li>
+                    <li id="them">قوالب </li>
+                    <li id="code">اكواد</li>
+                    <li id="app">تطبيقات</li>
+                  </ul>
+                </div>
+                <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>المنتج</th>
+          <th>كود المنتج</th>
+          <th>السعر</th>
+          <th>مشاهده</th>
+          <th>تعديل</th>
+          
+        </tr>
+      </thead>
+      <tbody id="your_prodect">
+           
+          </tbody>
+          </table>
+          </div>
+          </div>
+          </div> 
+          </div>
+          </div>
+          
+        
+
+          
+         <!--الضبط-->
+         <div class="setting" style="display: none;">
+           <div class="setting_title">
+            <h3>الاعدادات</h3>
+            <p>ادارة معلوماتك الشخصيه و اعدادات الحساب</p>
+          </div>
+          <form action="" method="post" class="setting_form">
+          <div class="data">
+            <span>
+              <h3>المعلومات الشخصيه</h3>
+              <p>قم بتحديث معلوماتك الشخثيه</p>
+            </span>             
+             <div class="name">
+                <p> * الاسم الكامل</p>
+                <input type="text" name="name" id="data_name">
+              </div>
+              <div class="email">
+                <p> * البريد الالكتروني </p>
+                <input type="email" name="email" id="data_email">
+              </div>
+              <div class="phone">
+                <p>رقم الهاتف</p>
+                <input type="tel" name="phone" id="data_phon">
+              </div>
+              
+              <div class="button">
+                <button id="btn_send" class="btn_send">حفظ التغيرات</button>
+              </div>
+          </div>
+
+           <div class="password">
+            <span>
+              <h3>الامان</h3>
+              <p>ادارة اعادادات الامان و الخصوصية</p>
+            </span>
+            <div class="old_password">
+              <p>كلمة المرور الحاليه</p>
+              <input type="text" id="old_password">
+            </div>
+            <div class="new_password">
+              <p>كلمة المرور الجديده</p>
+              <input type="text" name="new_password" id="new_password">
+            </div>
+            <div class="new_password2">
+              <p>تاكيد كلمة المرور الجديده</p>
+              <input type="text" name="new_password2" id="new_password2">
+            </div>
+            <button id="send_pass" class="send_pass">تحديث كلمة المرور</button>
+
+           </div>
+          </form>
+         </div>
+     </section>
+   </section> 
+   <!--script src="js/Admin_dashboard.js"></script-->
+   <script src="js/seller_dashboard.js"></script>
+</body>
+</html>

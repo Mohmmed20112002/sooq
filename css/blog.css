@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+.header{
+    width: 100%;
+    background-color: #eeeeee;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= NAV BAR ================= */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #fff;
+    position: relative;
+}
+
+.nav .logo{
+    width: 20%;
+}
+
+.nav .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #858cec;
+    font-weight: bold;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    width: 80%;
+    transition: 0.4s ease;
+}
+
+.nav ul li{
+    padding: 0px 20px;
+    font-size: 17px;
+}
+
+.nav ul li:hover{
+    cursor: pointer;
+    color: rgb(78, 38, 255);
+}
+
+#li_2 select,
+#li_3 select{
+    background-color: inherit;
+    font-family: 'Cairo', sans-serif;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* زر تسجيل الدخول */
+.sin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.sin button{
+    color: white;
+    font-size: 13px;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(78, 38, 255);
+    font-family: 'Cairo', sans-serif;
+    transition: 0.3s;
+}
+
+.sin button:hover{
+    background-color: #858cec;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger i{
+    font-size: 28px;
+}
+/* ================= CONTENT ================= */
+
+section{
+   margin: 60px 40px;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box{
+    display: flex;
+    width: 100%;
+}
+
+.search input[type="text"]{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button{
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(78, 38, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.Articles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.article_card{
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px 25px;
+    transition: 0.3s;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background-color: #0d0d0d;
+  color: #eee;
+  padding: 60px 10%;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+}
+
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer_col {
+  flex: 1 1 220px;
+}
+
+.footer_logo {
+  color: #00d8ff;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.footer_col h4 {
+  color: #00d8ff;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer_col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_col ul li {
+  margin-bottom: 10px;
+}
+
+.footer_col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer_col ul li a:hover {
+  color: #00d8ff;
+}
+
+.social_icons a {
+  display: inline-block;
+  background: #222;
+  color: #00d8ff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+.social_icons a:hover {
+  background: #00d8ff;
+  color: #000;
+}
+
+.footer_bottom {
+  border-top: 1px solid #222;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.footer_bottom span {
+  color: #00d8ff;
+}
+
+/* =====================================================
+                🔥 MEDIA QUERIES 🔥
+===================================================== */
+
+/* ============ الأجهزة المتوسطة (تابلت) ============ */
+@media (max-width: 992px){
+    section{
+        margin: 40px 20px;
+    }
+
+    .article_card{
+        width: 90%;
+    }
+}
+
+/* ============ الأجهزة الصغيرة (موبايل) ============ */
+@media (max-width: 768px){
+  .nav .logo {
+    width: 50%;
+    padding: 10px 0px 10px 14px;
+}
+.nav .logo a {
+  font-size: 20px;
+}
+ .nav {
+    padding: 10px 20px !important;
+  }
+  .nav ul {
+    position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: white;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        transform: translateY(-400px);
+        opacity: 0;
+        pointer-events: none;
+        border-top: 1px solid #eee;
+  }
+    .nav ul.show{
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav ul li{
+        margin: 18px 0;
+        font-size: 18px;
+    }
+
+    /* زر تسجيل الدخول داخل القائمة */
+    .sin{
+        margin-left: 0;
+    }
+
+    .burger{
+        display: flex;
+        align-items: center;
+    }
+.sin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px 10px 0px;
+    gap: 20px;
+    width: auto;
+}
+
+    .search-box{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search input[type="text"]{
+        width: 100%;
+    }
+
+    .search button{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .article_card{
+        width: 100%;
+    }
+
+    section{
+        margin: 30px 10px;
+    }
+}
+
+/* ============ الشاشات الصغيرة جدًا ============ */
+@media (max-width: 480px){
+
+
+    .sin button{
+        padding: 6px 12px;
+    }
+}
